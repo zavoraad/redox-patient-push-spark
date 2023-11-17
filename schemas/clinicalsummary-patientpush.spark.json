@@ -12001,4 +12001,119 @@
                     }
                   }, {
                     "name" : "CodeSystem",
-                  
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/CodeSystem"
+                    }
+                  }, {
+                    "name" : "CodeSystemName",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/CodeSystemName"
+                    }
+                  }, {
+                    "name" : "Name",
+                    "type" : "string",
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/Name"
+                    }
+                  }, {
+                    "name" : "AltCodes",
+                    "type" : {
+                      "type" : "array",
+                      "elementType" : {
+                        "type" : "struct",
+                        "fields" : [ {
+                          "name" : "Code",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/AltCodes/items/properties/Code"
+                          }
+                        }, {
+                          "name" : "CodeSystem",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/AltCodes/items/properties/CodeSystem"
+                          }
+                        }, {
+                          "name" : "CodeSystemName",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/AltCodes/items/properties/CodeSystemName"
+                          }
+                        }, {
+                          "name" : "Name",
+                          "type" : "string",
+                          "nullable" : true,
+                          "metadata" : {
+                            "description" : "",
+                            "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/AltCodes/items/properties/Name"
+                          }
+                        } ]
+                      },
+                      "containsNull" : true
+                    },
+                    "nullable" : true,
+                    "metadata" : {
+                      "description" : "",
+                      "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/TargetSite/properties/AltCodes"
+                    }
+                  } ]
+                },
+                "nullable" : true,
+                "metadata" : { }
+              }, {
+                "name" : "Comments",
+                "type" : {
+                  "type" : "array",
+                  "elementType" : {
+                    "type" : "struct",
+                    "fields" : [ {
+                      "name" : "Text",
+                      "type" : "string",
+                      "nullable" : true,
+                      "metadata" : {
+                        "description" : "",
+                        "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/Comments/items/properties/Text"
+                      }
+                    } ]
+                  },
+                  "containsNull" : true
+                },
+                "nullable" : true,
+                "metadata" : {
+                  "description" : "",
+                  "path" : "#/properties/VitalSigns/items/properties/Observations/items/properties/Comments"
+                }
+              } ]
+            },
+            "containsNull" : true
+          },
+          "nullable" : true,
+          "metadata" : {
+            "description" : "",
+            "path" : "#/properties/VitalSigns/items/properties/Observations"
+          }
+        } ]
+      },
+      "containsNull" : true
+    },
+    "nullable" : false,
+    "metadata" : {
+      "description" : "",
+      "path" : "#/properties/VitalSigns"
+    }
+  } ]
+}
