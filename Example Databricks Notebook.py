@@ -4,8 +4,10 @@
 # COMMAND ----------
 
 # MAGIC %python 
-# MAGIC import json, os
+# MAGIC import json, os, uuid
 # MAGIC from pyspark.sql.types import StructType
+# MAGIC from pyspark.sql.functions import expr
+# MAGIC
 # MAGIC
 # MAGIC schema = StructType.fromJson(json.load(open("./schemas/clinicalsummary-patientpush.spark.json", "r")))
 # MAGIC df = spark.read.option("multiline", True).format("json").schema(schema).load("file:///" + os.getcwd() + "/sampledata/*json") 
