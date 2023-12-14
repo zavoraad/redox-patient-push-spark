@@ -16,9 +16,9 @@ df.columns
 """
 ```
 
-# Json schema produced from "Hotfix" branch
+# Json schema produced 
 
-https://github.com/databricks-industry-solutions/json2spark-schema/tree/hotfix
+https://github.com/databricks-industry-solutions/json2spark-schema
 
 ``` scala
 import java.io._
