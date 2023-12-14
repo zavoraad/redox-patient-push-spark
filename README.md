@@ -5,6 +5,7 @@ Reading in a resource defined from  https://developer.redoxengine.com/data-model
 # Pyspark example
 
 ``` python
+%python
 import json
 from pyspark.sql.types import StructType
 
@@ -21,6 +22,7 @@ df.columns
 https://github.com/databricks-industry-solutions/json2spark-schema
 
 ``` scala
+%scala
 import java.io._
 import io.circe._
 import scala.reflect.runtime.universe._
