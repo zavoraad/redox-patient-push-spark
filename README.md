@@ -1,5 +1,5 @@
 # redox-patient-push-spark
-Reading in a resource defined from  https://developer.redoxengine.com/data-models/ClinicalSummary.html#PatientPush
+Reading in a resource defined from  [clinical summary](https://developer.redoxengine.com/data-models/ClinicalSummary.html#PatientPush) and [visit summary](https://developer.redoxengine.com/data-models/ClinicalSummary.html#VisitPush)
 
 
 # Pyspark example
