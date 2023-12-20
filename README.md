@@ -30,8 +30,14 @@ import org.apache.spark.sql.types._
 import io.circe.parser._
 import com.databricks.industry.solutions.json2spark._
 
-val file = new FileWriter(new File("./redox-patient-push-spark/clinicalsummary-patientpush.spark.json"))
-val y = new Json2Spark(Json2Spark.file2String("./redox-patient-push-spark/clinicalsummary-patientpush.json"))
+val file = new FileWriter(new File("./redox-patient-push-spark/schemas/clinicalsummary-patientpush.spark.json"))
+val y = new Json2Spark(Json2Spark.file2String("./redox-patient-push-spark/schemas/clinicalsummary-patientpush.json"))
+//y.convert2Spark.prettyJson
+file.write(y.convert2Spark.prettyJson)
+file.close()
+
+val file = new FileWriter(new File("./redox-patient-push-spark/schemas/clinicalsummary-visitpush.spark.json"))
+val y = new Json2Spark(Json2Spark.file2String("./redox-patient-push-spark/schemas/clinicalsummary-visitpush.json"))
 //y.convert2Spark.prettyJson
 file.write(y.convert2Spark.prettyJson)
 file.close()
